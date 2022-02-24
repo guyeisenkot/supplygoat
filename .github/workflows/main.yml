@@ -1,0 +1,14 @@
+name: Supply Chain
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 0 * * 0
+jobs:
+   bridgecrew:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run checkov
+      id: checkov
+      uses: bridgecrewio/checkov-action@master
+      env:
+        GITHUB_TOKEN: ${{secrets.THIS_IS_A_TEST_SECRET}}
