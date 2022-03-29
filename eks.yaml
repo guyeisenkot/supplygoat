@@ -22,7 +22,7 @@ Parameters:
     Description: CidrBlock for public subnet 02 within the VPC
   PrivateSubnet01Block:
     Type: String
-    Default: 192.168.128.0/18
+    Default: 192.168.128.0/0
     Description: CidrBlock for private subnet 01 within the VPC
   PrivateSubnet02Block:
     Type: String
